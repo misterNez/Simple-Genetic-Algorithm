@@ -1,0 +1,45 @@
+Author: Nick Nesbit
+Professor: Mark Hauschild
+Date: 4/5/2018
+
+
+Description:
+
+	Artificial Intelligence: CS 4300
+	Project #3: Simple Genetic Algorithm
+
+	User is prompted to enter a stringSize.
+	Original population of size 10 is randomly generated.
+	Each index of the string is either a 1 or 0.
+	Fitness function: Number of 1's in the string
+	Using binary tournanment, select parents.
+	Using parents, produce children.
+	Children are produced with either direct copy or uniform crossover.
+	Random chance of mutation for each string index.
+	Replace old population with new population, keeping the two best individuals around.
+	Repeat until average utility does not increase for three whole generations
+	Repeat entire process 5 times, checking if global optimum is reached.
+	If gloabl optimum is not reach 5/5 times, double sample size and repeat.
+	Repeat until sample size is equal to 81920.
+	Display results.
+	
+Test Results:
+	String size =  5,  Population size = 10 (Succeeds)
+	String size = 10, Population size = 80 (Succeeds)
+	String size = 20, Population size = 2560 (Succeeds)
+	String size = 50, Population size = 81920 (Fails)
+	
+Environment:
+
+	Developed using Eclipse IDE on Windows 10, using 64-bit Lenovo laptop.
+	See Makefile for compilation details.
+
+Files:
+
+	main.cpp:				Main driver file.
+	
+	individual.h: 			Declares structure for a single individual.
+	
+Problems:
+
+	Implementing upper and lower bounds on the population size
